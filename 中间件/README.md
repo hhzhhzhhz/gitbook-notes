@@ -1,0 +1,13 @@
+# 中间件
+
+spring cloud gateway version
+
+```
+开发过程中有问题推荐 https://github.com/spring-cloud/spring-cloud-gateway/issues查询或者提问
+<parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.2.5.RELEASE</version>
+        <relativePath/> <!-- lookup parent from repository -->
+</parent>
+```
