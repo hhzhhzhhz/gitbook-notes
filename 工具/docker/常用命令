@@ -1,0 +1,82 @@
+## 常用命令
+
+> 镜像列表
+
+```
+docker images
+```
+
+> 删除镜像
+
+```
+docker rmi container_id
+```
+
+> docker进程
+
+```
+docker ps -a
+```
+
+> 关闭进程
+
+```
+docker stop container_id
+```
+
+> 删除进程
+
+```
+docker rm container_id
+```
+
+> 镜像打包
+
+```
+docker build -t spring-grpc-client:2.0 . # .代表当前dockerfile的目录
+```
+
+> 启动命令
+
+- ```
+  docker run -d -p 8080:8080 --rm spring-grpc-client:2.0
+  
+  - -p 主机(宿主)端口:容器端口
+  - -d将日志打印到控制台
+  ```
+
+> 进入容器
+
+```
+docker exec -it container_id sh
+```
+
+> 创建一个bridge类型的网桥
+
+```
+docker network create --driver bridge --subnet 172.22.16.0/24 --gateway 172.22.16.1 my_net2
+```
+
+> 查看网络
+
+```
+docker network ls
+```
+
+> 指定network启动
+
+```
+docker run -it --network=my_net2 --name=bbox1 busybox
+
+docker run -it --network=my_net2 --name=bbox2 busybox
+```
+
+# 打包
+
+```
+dockerfile在当前目录下
+docker build -t name:${version} .
+指定文件dockerfile
+docker build -f ./Src/Dockerfile -t name:${version} .
+```
+
