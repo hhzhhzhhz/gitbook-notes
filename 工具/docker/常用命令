@@ -4,7 +4,7 @@
 
 ```
 docker login --username=username -p password address
-dcoker push address/name/appname:version
+docker push address/name/appname:version
 ```
 
 > 镜像列表
