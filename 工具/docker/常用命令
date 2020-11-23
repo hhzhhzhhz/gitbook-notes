@@ -1,5 +1,12 @@
 ## 常用命令
 
+##### 登陆
+
+```
+docker login --username=username -p password address
+dcoker push address/name/appname:version
+```
+
 > 镜像列表
 
 ```
