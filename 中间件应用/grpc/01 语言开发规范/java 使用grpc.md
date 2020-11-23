@@ -1,12 +1,5 @@
 # java 使用grpc
 
-下载代码桩工具
-
-```
-https://github.com/protocolbuffers/protobuf/releases
-https://repo1.maven.org/maven2/io/grpc/
-```
-
 定义proto文件
 
 ```
@@ -30,20 +23,6 @@ message Hresponse {
   string message = 1;
 }
 ```
-
-生成protobuf文件
-
-```
-D:\soft\protoc-3.13.0-win64\bin\protoc.exe --plugin=protoc-gen-grpc-java=D:\soft\protoc-3.13.0-win64\bin\protoc-gen-grpc-java-1.32.2-windows-x86_64.exe --java_out=./ file
-```
-
-生成代码桩
-
-```
-D:\soft\protoc-3.13.0-win64\bin\protoc.exe --plugin=protoc-gen-grpc-java=D:\soft\protoc-3.13.0-win64\bin\protoc-gen-grpc-java-1.32.2-windows-x86_64.exe --grpc-java_out=./ file
-```
-
-服务端实现代码桩生成的方法即可
 
 #### grpc在spring 中应用
 
