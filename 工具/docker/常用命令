@@ -1,5 +1,18 @@
 ## 常用命令
 
+#### 构建多系统CPU架构的docker镜像
+
+```
+export DOCKER_CLI_EXPERIMENTAL=enabled // 开启buildx，首先要确保 Docker 版本不低于 19.03
+docker buildx version  // 验证
+
+参考链接：
+        https://www.cnblogs.com/ryanyangcs/p/11969039.html
+        https://docs.docker.com/docker-for-mac/multi-arch/
+```
+
+
+
 ##### 登陆
 
 ```
