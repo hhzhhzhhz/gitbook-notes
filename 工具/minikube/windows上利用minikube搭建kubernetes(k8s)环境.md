@@ -1,5 +1,11 @@
 # Minikube - Kubernetes本地实验环境
 
+进入etcd
+
+```
+kubectl exec -it --namespace kube-system etcd-minikube sh
+```
+
 安装minikube，缺省驱动
 
 ```
